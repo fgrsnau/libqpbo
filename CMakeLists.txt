@@ -12,3 +12,9 @@ set(SRC_FILES QPBO.cpp QPBO_extra.cpp QPBO_maxflow.cpp QPBO_postprocessing.cpp)
 add_library(qpbo_shared SHARED ${SRC_FILES})
 add_library(qpbo_static STATIC ${SRC_FILES})
 set_target_properties(qpbo_shared qpbo_static PROPERTIES OUTPUT_NAME qpbo)
+
+install(TARGETS qpbo_shared qpbo_static EXPORT qpbo DESTINATION lib)
+install(FILES block.h DESTINATION include/qpbo)
+install(FILES QPBO.h DESTINATION include/qpbo RENAME qpbo.h)
+
+install(EXPORT qpbo DESTINATION lib/qpbo)
