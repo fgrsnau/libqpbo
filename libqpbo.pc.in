@@ -1,9 +1,9 @@
-prefix=@CMAKE_INSTALL_PREFIX@
-libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
-includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+prefix=@prefix@
+libdir=${prefix}/@libdir@
+includedir=${prefix}/@includedir@
 
 Name: libqpbo
 Description: QPBO Solver
-Version: @QPBO_VERSION_STRING@
+Version: @version@
 Libs: -L${libdir} -lqpbo
 Cflags: -I${includedir}

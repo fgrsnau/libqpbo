@@ -23,5 +23,10 @@ install(TARGETS qpbo_shared qpbo_static DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 install(FILES block.h                   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/qpbo")
 install(FILES qpbo.h                    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/qpbo")
 
+set(prefix     "${CMAKE_INSTALL_PREFIX}")
+set(libdir     "${CMAKE_INSTALL_LIBDIR}")
+set(includedir "${CMAKE_INSTALL_INCLUDEDIR}")
+set(version    "${QPBO_VERSION_STRING}")
+
 configure_file(libqpbo.pc.in libqpbo.pc @ONLY)
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/libqpbo.pc" DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
