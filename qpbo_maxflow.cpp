@@ -23,6 +23,8 @@
 #include "qpbo.h"
 
 
+using namespace qpbo;
+
 
 #define INFINITE_D ((int)(((unsigned)-1)/2))		/* infinite distance to the terminal */
 

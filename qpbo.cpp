@@ -24,6 +24,9 @@
 #include "qpbo.h"
 
 
+using namespace qpbo;
+
+
 template <typename REAL>
 	QPBO<REAL>::QPBO(int node_num_max, int edge_num_max, void (*err_function)(const char *))
 	: node_num(0),
