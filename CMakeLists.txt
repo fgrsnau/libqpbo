@@ -9,7 +9,7 @@ set(QPBO_VERSION_MINOR 4)
 set(QPBO_VERSION_PATCH 0)
 set(QPBO_VERSION_STRING "${QPBO_VERSION_MAJOR}.${QPBO_VERSION_MINOR}.${QPBO_VERSION_PATCH}")
 
-set(SRC_FILES QPBO.cpp QPBO_extra.cpp QPBO_maxflow.cpp QPBO_postprocessing.cpp)
+set(SRC_FILES qpbo.cpp qpbo_extra.cpp qpbo_maxflow.cpp qpbo_postprocessing.cpp)
 
 add_library(qpbo_shared SHARED ${SRC_FILES})
 add_library(qpbo_static STATIC ${SRC_FILES})
@@ -21,7 +21,7 @@ set_target_properties(
 
 install(TARGETS qpbo_shared qpbo_static DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 install(FILES block.h                   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/qpbo")
-install(FILES QPBO.h RENAME qpbo.h      DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/qpbo")
+install(FILES qpbo.h                    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/qpbo")
 
 configure_file(libqpbo.pc.in libqpbo.pc @ONLY)
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/libqpbo.pc" DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")

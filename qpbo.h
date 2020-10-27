@@ -79,7 +79,7 @@
 	Example usage: minimize energy E(x,y) = 2*x + 3*(y+1) + (x+1)*(y+2), where x,y \in {0,1}.
 
 	#include <stdio.h>
-	#include "QPBO.h"
+	#include "qpbo.h"
 
 	int main()
 	{

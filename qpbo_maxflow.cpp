@@ -20,7 +20,7 @@
 
 
 #include <stdio.h>
-#include "QPBO.h"
+#include "qpbo.h"
 
 
 

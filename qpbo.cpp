@@ -1,4 +1,4 @@
-/* QPBO.cpp */
+/* qpbo.cpp */
 /*
     Copyright 2006-2008 Vladimir Kolmogorov (vnk@ist.ac.at).
 
@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "QPBO.h"
+#include "qpbo.h"
 
 
 template <typename REAL>

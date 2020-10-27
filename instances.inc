@@ -1,4 +1,4 @@
-#include "QPBO.h"
+#include "qpbo.h"
 
 #ifdef _MSC_VER
 #pragma warning(disable: 4661)
